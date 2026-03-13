@@ -1,0 +1,64 @@
+let userManager = require('../schemas/users');
+let bcrypt = require('bcrypt');
+let { RoleManager } = require('../utils/dbLocal');
+
+module.exports = {
+    CreateAnUser: function (username, password, email, role, fullname, avatar, status, logincount) {
+        // Hash password before creating
+        let salt = bcrypt.genSaltSync(10);
+        let hashedPassword = bcrypt.hashSync(password, salt);
+
+        return userManager.create(
+            username,
+            hashedPassword,
+            email,
+            fullname,
+            avatar,
+            status,
+            role
+        );
+    },
+
+    FindByUsername: async function (username) {
+        return userManager.findByUsername(username);
+    },
+
+    FailLogin: async function (user) {
+        user.loginCount++;
+        if (user.loginCount == 3) {
+            user.loginCount = 0;
+            user.lockTime = new Date(Date.now() + 60 * 60 * 1000);
+        }
+        userManager.update(user._id, {
+            loginCount: user.loginCount,
+            lockTime: user.lockTime
+        });
+    },
+
+    SuccessLogin: async function (user) {
+        userManager.update(user._id, { loginCount: 0 });
+    },
+
+    GetAllUser: async function () {
+        let users = userManager.findAll();
+        return users.map(user => ({
+            ...user,
+            role: RoleManager.findById(user.role)
+        }));
+    },
+
+    FindById: async function (id) {
+        try {
+            let getUser = userManager.findById(id);
+            if (getUser) {
+                return {
+                    ...getUser,
+                    role: RoleManager.findById(getUser.role)
+                };
+            }
+            return null;
+        } catch (error) {
+            return false
+        }
+    }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "_id": "cat-001",
+        "name": "Electronics",
+        "slug": "electronics",
+        "description": "Electronic devices and gadgets",
+        "images": [
+            "https://i.imgur.com/QkIa5tT.jpeg"
+        ],
+        "isDeleted": false,
+        "createdAt": "2026-03-13T00:00:00.000Z",
+        "updatedAt": "2026-03-13T00:00:00.000Z"
+    },
+    {
+        "_id": "cat-002",
+        "name": "Clothes",
+        "slug": "clothes",
+        "description": "Clothing and fashion items",
+        "images": [
+            "https://i.imgur.com/QkIa5tT.jpeg"
+        ],
+        "isDeleted": false,
+        "createdAt": "2026-03-13T00:00:00.000Z",
+        "updatedAt": "2026-03-13T00:00:00.000Z"
+    }
+]

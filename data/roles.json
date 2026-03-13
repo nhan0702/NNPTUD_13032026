@@ -1,0 +1,18 @@
+[
+    {
+        "_id": "role-admin-001",
+        "name": "admin",
+        "description": "Administrator role with full permissions",
+        "isDeleted": false,
+        "createdAt": "2026-03-13T00:00:00.000Z",
+        "updatedAt": "2026-03-13T00:00:00.000Z"
+    },
+    {
+        "_id": "role-user-001",
+        "name": "user",
+        "description": "Regular user role",
+        "isDeleted": false,
+        "createdAt": "2026-03-13T00:00:00.000Z",
+        "updatedAt": "2026-03-13T00:00:00.000Z"
+    }
+]

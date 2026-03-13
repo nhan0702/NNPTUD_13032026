@@ -1,0 +1,30 @@
+[
+    {
+        "_id": "prod-001",
+        "title": "Laptop Pro",
+        "slug": "laptop-pro",
+        "price": 999,
+        "description": "High-performance laptop for professionals",
+        "category": "cat-001",
+        "images": [
+            "https://i.imgur.com/eGOUveI.jpeg"
+        ],
+        "isDeleted": false,
+        "createdAt": "2026-03-13T00:00:00.000Z",
+        "updatedAt": "2026-03-13T00:00:00.000Z"
+    },
+    {
+        "_id": "prod-002",
+        "title": "T-Shirt Classic",
+        "slug": "t-shirt-classic",
+        "price": 29,
+        "description": "Classic comfortable t-shirt",
+        "category": "cat-002",
+        "images": [
+            "https://i.imgur.com/UsFIvYs.jpeg"
+        ],
+        "isDeleted": false,
+        "createdAt": "2026-03-13T00:00:00.000Z",
+        "updatedAt": "2026-03-13T00:00:00.000Z"
+    }
+]

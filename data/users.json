@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "user-admin-001",
+    "username": "admin",
+    "password": "$2b$10$YourHashedPasswordHere",
+    "email": "admin@example.com",
+    "fullName": "Administrator",
+    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
+    "status": true,
+    "role": "role-admin-001",
+    "loginCount": 0,
+    "lockTime": null,
+    "isDeleted": false,
+    "createdAt": "2026-03-13T00:00:00.000Z",
+    "updatedAt": "2026-03-13T00:00:00.000Z"
+  },
+  {
+    "_id": "17733864453506p52ks6tx",
+    "username": "testuser123",
+    "password": "$2b$10$rOawYmRIZDnlMrne33.YO.c5atZcvk4Bh1bVH2eolSGIlN1nG4FDm",
+    "email": "testuser@example.com",
+    "fullName": "",
+    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
+    "status": "role-user-001",
+    "role": null,
+    "loginCount": 0,
+    "lockTime": null,
+    "isDeleted": false,
+    "createdAt": "2026-03-13T07:20:45.350Z",
+    "updatedAt": "2026-03-13T07:32:04.122Z"
+  },
+  {
+    "_id": "1773387115885le24t1z3e",
+    "username": "testuser123",
+    "password": "$2b$10$3ylu35duFGQ4XgrIANd10.W8GhsGhbptEYn3IEg6q1Vyby9iczxqG",
+    "email": "testuser@example.com",
+    "fullName": "",
+    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
+    "status": "role-user-001",
+    "role": null,
+    "loginCount": 0,
+    "lockTime": null,
+    "isDeleted": false,
+    "createdAt": "2026-03-13T07:31:55.885Z",
+    "updatedAt": "2026-03-13T07:31:55.885Z"
+  }
+]
