@@ -1,10 +1,11 @@
 var express = require('express');
 var router = express.Router();
 let userController = require('../controllers/users')
-let { RegisterValidator, handleResultValidator } = require('../utils/validatorHandler')
+let { RegisterValidator, ChangePasswordValidator, handleResultValidator } = require('../utils/validatorHandler')
 let bcrypt = require('bcrypt')
 let jwt = require('jsonwebtoken')
 let { checkLogin } = require('../utils/authHandler')
+const { privateKey, jwtOptions } = require('../utils/jwtConfig')
 
 /* Register */
 router.post('/register', RegisterValidator, handleResultValidator, async function (req, res, next) {
@@ -55,9 +56,7 @@ router.post('/login', async function (req, res, next) {
                 await userController.SuccessLogin(getUser);
                 let token = jwt.sign({
                     id: getUser._id
-                }, "secret", {
-                    expiresIn: '30d'
-                })
+                }, privateKey, jwtOptions)
                 res.send({ token: token, user: getUser })
             } else {
                 await userController.FailLogin(getUser);
@@ -72,6 +71,32 @@ router.post('/login', async function (req, res, next) {
 /* Get current user */
 router.get('/me', checkLogin, function (req, res, next) {
     res.send(req.user)
+})
+
+/* Change password */
+router.post('/changepassword', checkLogin, ChangePasswordValidator, handleResultValidator, async function (req, res, next) {
+    try {
+        let userId = req.user._id;
+        let { oldPassword, newPassword } = req.body;
+
+        let updatedUser = await userController.ChangePassword(userId, oldPassword, newPassword);
+
+        // Không trả về password trong response
+        res.send({
+            message: "Thay đổi mật khẩu thành công",
+            user: {
+                _id: updatedUser._id,
+                username: updatedUser.username,
+                email: updatedUser.email,
+                fullName: updatedUser.fullName,
+                avatarUrl: updatedUser.avatarUrl,
+                status: updatedUser.status,
+                role: updatedUser.role
+            }
+        });
+    } catch (error) {
+        res.status(400).send({ message: error.message });
+    }
 })
 
 module.exports = router;

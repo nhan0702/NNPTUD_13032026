@@ -1,5 +1,7 @@
 let jwt = require('jsonwebtoken')
 let userController = require('../controllers/users')
+const { publicKey } = require('./jwtConfig')
+
 module.exports = {
     checkLogin: async function (req, res, next) {
         let token = req.headers.authorization;
@@ -8,8 +10,8 @@ module.exports = {
             return;
         }
         token = token.split(" ")[1];
-        try {//private - public
-            let result = jwt.verify(token, "secret")
+        try {
+            let result = jwt.verify(token, publicKey, { algorithms: ['RS256'] })
             let user = await userController.FindById(result.id)
             if (!user) {
                 res.status(403).send("ban chua dang nhap");

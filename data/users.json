@@ -17,7 +17,7 @@
   {
     "_id": "17733864453506p52ks6tx",
     "username": "testuser123",
-    "password": "$2b$10$rOawYmRIZDnlMrne33.YO.c5atZcvk4Bh1bVH2eolSGIlN1nG4FDm",
+    "password": "$2b$10$ZozNz1ocYD7UY8Gb8zc4eOkudoh0XPSbxRgpWzkuAIAd56Sywfwpq",
     "email": "testuser@example.com",
     "fullName": "",
     "avatarUrl": "https://i.sstatic.net/l60Hf.png",
@@ -27,7 +27,7 @@
     "lockTime": null,
     "isDeleted": false,
     "createdAt": "2026-03-13T07:20:45.350Z",
-    "updatedAt": "2026-03-13T07:32:04.122Z"
+    "updatedAt": "2026-03-13T07:43:08.387Z"
   },
   {
     "_id": "1773387115885le24t1z3e",
@@ -43,5 +43,20 @@
     "isDeleted": false,
     "createdAt": "2026-03-13T07:31:55.885Z",
     "updatedAt": "2026-03-13T07:31:55.885Z"
+  },
+  {
+    "_id": "1773387613926jqp5srcpt",
+    "username": "testuser123",
+    "password": "$2b$10$YH2SmJsWU3a2mJ9bgIH6UeNabkNPr/hcmG5AL/ay1jXlkhwtNS1Bm",
+    "email": "testuser@example.com",
+    "fullName": "",
+    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
+    "status": "role-user-001",
+    "role": null,
+    "loginCount": 0,
+    "lockTime": null,
+    "isDeleted": false,
+    "createdAt": "2026-03-13T07:40:13.926Z",
+    "updatedAt": "2026-03-13T07:40:13.927Z"
   }
 ]

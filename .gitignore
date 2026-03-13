@@ -29,6 +29,13 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
+# JWT/RSA Keys - NEVER commit private keys!
+keys/private.key
+keys/*.key
+!keys/public.key
+!keys/.gitignore
+!keys/README.md
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
