@@ -13,9 +13,9 @@ module.exports = {
             hashedPassword,
             email,
             fullname,
+            role,
             avatar,
-            status,
-            role
+            status
         );
     },
 

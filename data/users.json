@@ -1,62 +1,17 @@
 [
   {
-    "_id": "user-admin-001",
-    "username": "admin",
-    "password": "$2b$10$YourHashedPasswordHere",
-    "email": "admin@example.com",
-    "fullName": "Administrator",
-    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
-    "status": true,
-    "role": "role-admin-001",
-    "loginCount": 0,
-    "lockTime": null,
-    "isDeleted": false,
-    "createdAt": "2026-03-13T00:00:00.000Z",
-    "updatedAt": "2026-03-13T00:00:00.000Z"
-  },
-  {
-    "_id": "17733864453506p52ks6tx",
+    "_id": "1773389420336xry4rxdx1",
     "username": "testuser123",
-    "password": "$2b$10$ZozNz1ocYD7UY8Gb8zc4eOkudoh0XPSbxRgpWzkuAIAd56Sywfwpq",
+    "password": "$2b$10$Hp5ymzei4e6cI33VFGDNVevvvBOAN3.jI2xPvZnp6ZneLbIE5zBIi",
     "email": "testuser@example.com",
     "fullName": "",
     "avatarUrl": "https://i.sstatic.net/l60Hf.png",
-    "status": "role-user-001",
-    "role": null,
+    "status": false,
+    "role": "role-user-001",
     "loginCount": 0,
     "lockTime": null,
     "isDeleted": false,
-    "createdAt": "2026-03-13T07:20:45.350Z",
-    "updatedAt": "2026-03-13T07:43:08.387Z"
-  },
-  {
-    "_id": "1773387115885le24t1z3e",
-    "username": "testuser123",
-    "password": "$2b$10$3ylu35duFGQ4XgrIANd10.W8GhsGhbptEYn3IEg6q1Vyby9iczxqG",
-    "email": "testuser@example.com",
-    "fullName": "",
-    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
-    "status": "role-user-001",
-    "role": null,
-    "loginCount": 0,
-    "lockTime": null,
-    "isDeleted": false,
-    "createdAt": "2026-03-13T07:31:55.885Z",
-    "updatedAt": "2026-03-13T07:31:55.885Z"
-  },
-  {
-    "_id": "1773387613926jqp5srcpt",
-    "username": "testuser123",
-    "password": "$2b$10$YH2SmJsWU3a2mJ9bgIH6UeNabkNPr/hcmG5AL/ay1jXlkhwtNS1Bm",
-    "email": "testuser@example.com",
-    "fullName": "",
-    "avatarUrl": "https://i.sstatic.net/l60Hf.png",
-    "status": "role-user-001",
-    "role": null,
-    "loginCount": 0,
-    "lockTime": null,
-    "isDeleted": false,
-    "createdAt": "2026-03-13T07:40:13.926Z",
-    "updatedAt": "2026-03-13T07:40:13.927Z"
+    "createdAt": "2026-03-13T08:10:20.336Z",
+    "updatedAt": "2026-03-13T08:10:22.672Z"
   }
 ]
