@@ -30,7 +30,8 @@ bower_components
 .lock-wscript
 
 # JWT/RSA Keys - NEVER commit private keys!
-
+keys/private.key
+keys/public.key
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
